@@ -19,12 +19,15 @@ var dns = require('dns');
             throw err;
         }
         resolve(address);
-
+        console.log("abc")
         });
+        console.log("def")
  });
 
 
-promiseAddObj.then((address)=>{console.log("The Address with promise is: "+address)}).catch((err)=>{console.log(err)});
+promiseAddObj.then((address)=>{console.log("The Address with promise is: "+address)})
+.catch((err)=>{console.log(err)});
+console.log("things")
 
 //Aync&Wait
 
