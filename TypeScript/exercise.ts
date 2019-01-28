@@ -3,7 +3,7 @@ class University{
 //dept: String
     constructor(public name: String, public dept: String){}
     
-    graduation (year: Number) {
+    graduation (year: Number) :void  {
         console.log(`Graduating ${this.dept} ${year} students`);
     }
 }  
