@@ -8,30 +8,30 @@ import { Component, OnInit } from '@angular/core';
     </p>
     <div>
     <button (click)="deduct()" >{{minus}}</button>
-    {{intCount}}    
+    {{ComponetCounterValue}}    
     <button (click)="add()">{{plus}}</button>
 
     </div>
 
-    Component counter value = {{intCount}}
+    Component counter value = {{ComponetCounterValue}}
 
   `,
   styles: ['button{width: 30px; height:15px; line-height:5px; text-align:center;}']
 })
 export class CounterComponent implements OnInit {
   message = "This a window for the counter";
-  intCount = 6;
+  ComponetCounterValue = 6;
   minus = "-";
   plus = "+";
   constructor() { }
 
   deduct(){
-    this.intCount--;
-    console.log("deducted value is "+this.intCount);
+    this.ComponetCounterValue--;
+    console.log("deducted value is "+this.ComponetCounterValue);
   }
   add(){
-    this.intCount++;
-    console.log("Added value is "+this.intCount);
+    this.ComponetCounterValue++;
+    console.log("Added value is "+this.ComponetCounterValue);
   }
 
   ngOnInit() {
