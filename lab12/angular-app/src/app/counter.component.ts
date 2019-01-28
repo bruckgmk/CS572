@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
     </p>
     <div>
     <button (click)="deduct()" >{{minus}}</button>
-    {{ComponetCounterValue}}    
+    {{ComponetCounterValue}}   
     <button (click)="add()">{{plus}}</button>
 
     </div>
@@ -20,7 +20,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CounterComponent implements OnInit {
   message = "This a window for the counter";
-  ComponetCounterValue = 6;
+  ComponetCounterValue: number = 6;
   minus = "-";
   plus = "+";
   constructor() { }
