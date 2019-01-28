@@ -1,9 +1,11 @@
-function University(name: String, dept: String){
-    this.name = name;
-    this.dept = dept;
-    this.graduation = function(year: Number){
+class University{
+//name : String; 
+//dept: String
+    constructor(public name: String, public dept: String){}
+    
+    graduation (year: Number) {
         console.log(`Graduating ${this.dept} ${year} students`);
     }
-    var mum = new University("MUM","Computer Science");
+}  
+    const mum = new University("MUM","Computer Science");
     mum.graduation(2019);
-}
